@@ -31,14 +31,25 @@ extension TreeNode {
     }
     
     func levelOrderTraversal(visit: (TreeNode) -> ()) {
-        var queue = Queue<TreeNode>()
+        var queue = [TreeNode]()
+        queue.append(self)
         
-        children.forEach {
-            visit($0)
-            
+        while !queue.isEmpty {
+            let node = queue.remove(at: 0)
+            visit(node)
+            node.children.forEach { queue.append($0) }
         }
     }
 }
 
-
-
+extension TreeNode where T: Equatable {
+    func search(_ value: T) -> TreeNode<T>? {
+        var output: TreeNode<T>?
+        levelOrderTraversal { node in
+            if node.value ==  value {
+                output = node
+            }
+        }
+        return output
+    }
+}

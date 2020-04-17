@@ -19,3 +19,4 @@ ac.add(aca)
 let acaa = TreeNode("ACAA")
 aca.add(acaa)
 
+a.levelOrderTraversal(visit: { print($0.value)})
