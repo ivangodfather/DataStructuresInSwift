@@ -12,7 +12,12 @@
 		425733E12446EAAC00591289 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425733E02446EAAC00591289 /* LinkedList.swift */; };
 		425733E52448B53100591289 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425733E42448B53100591289 /* Stack.swift */; };
 		425733E72448C58100591289 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425733E62448C58100591289 /* Tree.swift */; };
+		427177B6244F1CA10069F019 /* TrieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427177B5244F1CA10069F019 /* TrieNode.swift */; };
+		427177B8244F1D7F0069F019 /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427177B7244F1D7F0069F019 /* Trie.swift */; };
+		427177BA244F301B0069F019 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427177B9244F301B0069F019 /* BinarySearch.swift */; };
 		427550B724497F07001FA872 /* BinaryNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427550B624497F07001FA872 /* BinaryNode.swift */; };
+		42828F8A2452BBFF00D94A4C /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42828F892452BBFF00D94A4C /* Heap.swift */; };
+		42828F8C2452BC1800D94A4C /* HeapPriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42828F8B2452BC1800D94A4C /* HeapPriorityQueue.swift */; };
 		42CDABA62449AC6F008D97DC /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CDABA52449AC6F008D97DC /* BinarySearchTree.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +40,12 @@
 		425733E02446EAAC00591289 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		425733E42448B53100591289 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		425733E62448C58100591289 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		427177B5244F1CA10069F019 /* TrieNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieNode.swift; sourceTree = "<group>"; };
+		427177B7244F1D7F0069F019 /* Trie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
+		427177B9244F301B0069F019 /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 		427550B624497F07001FA872 /* BinaryNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryNode.swift; sourceTree = "<group>"; };
+		42828F892452BBFF00D94A4C /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
+		42828F8B2452BC1800D94A4C /* HeapPriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapPriorityQueue.swift; sourceTree = "<group>"; };
 		42CDABA52449AC6F008D97DC /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +86,11 @@
 				425733E62448C58100591289 /* Tree.swift */,
 				427550B624497F07001FA872 /* BinaryNode.swift */,
 				42CDABA52449AC6F008D97DC /* BinarySearchTree.swift */,
+				427177B5244F1CA10069F019 /* TrieNode.swift */,
+				427177B7244F1D7F0069F019 /* Trie.swift */,
+				427177B9244F301B0069F019 /* BinarySearch.swift */,
+				42828F892452BBFF00D94A4C /* Heap.swift */,
+				42828F8B2452BC1800D94A4C /* HeapPriorityQueue.swift */,
 			);
 			path = DataStructures;
 			sourceTree = "<group>";
@@ -141,10 +156,15 @@
 				427550B724497F07001FA872 /* BinaryNode.swift in Sources */,
 				425733E12446EAAC00591289 /* LinkedList.swift in Sources */,
 				425733E72448C58100591289 /* Tree.swift in Sources */,
+				42828F8C2452BC1800D94A4C /* HeapPriorityQueue.swift in Sources */,
+				427177B8244F1D7F0069F019 /* Trie.swift in Sources */,
+				427177BA244F301B0069F019 /* BinarySearch.swift in Sources */,
+				427177B6244F1CA10069F019 /* TrieNode.swift in Sources */,
 				42CDABA62449AC6F008D97DC /* BinarySearchTree.swift in Sources */,
 				421C36A52448A6F60002455F /* Queue.swift in Sources */,
 				425733E52448B53100591289 /* Stack.swift in Sources */,
 				425733DA2446EAA300591289 /* main.swift in Sources */,
+				42828F8A2452BBFF00D94A4C /* Heap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

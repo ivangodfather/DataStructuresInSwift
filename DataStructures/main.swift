@@ -6,22 +6,36 @@
 //  Copyright © 2020 Ivan Ruiz Monjo. All rights reserved.
 //
 
-var tree: BinaryNode<Int> = {
-  let zero = BinaryNode(value: 0)
-  let one = BinaryNode(value: 1)
-  let five = BinaryNode(value: 5)
-  let seven = BinaryNode(value: 4)
-  let eight = BinaryNode(value: 8)
-  let nine = BinaryNode(value: 9)
-  
-  seven.leftChild = one
-  one.leftChild = zero
-  one.rightChild = five
-  seven.rightChild = nine
-  nine.leftChild = eight
-  
-  return seven
-}()
-let serialized = tree.serialize()
-let des = BinaryNode.deserialize(serialized)
-print(des!.description)
+import Foundation
+
+func myBinarySearch<T: Comparable>(value: T, array: [T]) -> Bool {
+    guard !array.isEmpty else {
+        return false
+    }
+    let middle = array.count / 2
+    let elem = array[middle]
+    switch elem {
+    case value: return true
+    case _ where value < elem:
+        let newArray = array[array.startIndex...middle - 1]
+        return myBinarySearch(value: value, array: Array(newArray))
+    case _ where value > elem:
+        let newArray = array[middle + 1..<array.endIndex]
+        return myBinarySearch(value: value, array: Array(newArray))
+    default: fatalError()
+    }
+}
+
+func calculateTime(block : (() -> Void)) {
+    let start = DispatchTime.now()
+    block()
+    let end = DispatchTime.now()
+    let nanoTime = end.uptimeNanoseconds - start.uptimeNanoseconds
+    let timeInterval = Double(nanoTime) / 1_000_000_000
+    print("Time: \(timeInterval) seconds")
+}
+
+
+let arr = [1,2,3,4]
+print(arr[arr.endIndex - 1])
+print(myBinarySearch(value: 4, array: arr))
